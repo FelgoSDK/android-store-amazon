@@ -67,7 +67,7 @@ public class AmazonIabHelper extends IabHelper {
      * see parent
      */
     @Override
-    protected void launchPurchaseFlowInner(Activity act, String sku, String extraData) {
+    protected void launchPurchaseFlowInner(Activity act, String itemType, String sku, String extraData) {
         mExtraData = extraData;
         PurchasingService.purchase(sku);
     }
